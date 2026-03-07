@@ -13,7 +13,6 @@ Two tasks in one project: first, implement a BERT-style Transformer encoder in r
 - [Task 3 — Fine-tuning BERT for Classification](#task-3--fine-tuning-bert-for-classification)
 - [Results](#results)
 - [Key Findings](#key-findings)
-- [Project Structure](#project-structure)
 - [Requirements](#requirements)
 
 ---
