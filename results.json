@@ -1,0 +1,29 @@
+{
+  "note": "Results from NLP_Assignment_3_25AI60R09 training run on Fakeddit dataset.",
+  "task": "Fakeddit fake-news binary classification",
+  "model": "bert-base-uncased (fine-tuned)",
+  "dataset": {
+    "source": "Fakeddit (all_train.tsv + all_test_public.tsv + all_validate.tsv)",
+    "sample_size_per_class": 10000,
+    "total_balanced_samples": 20000,
+    "train_split": 16000,
+    "test_split": 4000,
+    "input_format": "clean_title + top-level comments (BERT text pair, max_length=256)"
+  },
+  "training": {
+    "epochs": 3,
+    "batch_size": 8,
+    "learning_rate": 2e-5,
+    "optimizer": "AdamW"
+  },
+  "metrics": {
+    "accuracy": 0.8775,
+    "precision": 0.8826,
+    "recall": 0.8713,
+    "f1": 0.8769,
+    "confusion_matrix": [
+      [1767, 233],
+      [257, 1743]
+    ]
+  }
+}
